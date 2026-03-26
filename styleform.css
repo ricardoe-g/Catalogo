@@ -1,18 +1,13 @@
-/* fundo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #eaeaea;
     margin: 0;
     padding: 0;
 }
-
-/* título */
 h2 {
     text-align: center;
     margin-top: 20px;
 }
-
-/* formulário */
 form {
     width: 300px;
     margin: 20px auto;
@@ -20,21 +15,15 @@ form {
     background-color: white;
     border: 1px solid #ccc;
 }
-
-/* texto */
 p {
     margin-bottom: 5px;
 }
-
-/* campos */
 input, textarea {
     width: 100%;
     margin-bottom: 10px;
     padding: 5px;
     border: 1px solid #aaa;
 }
-
-/* botão */
 button {
     width: 100%;
     padding: 8px;
@@ -42,8 +31,6 @@ button {
     color: white;
     border: none;
 }
-
-/* efeito simples */
 button:hover {
     background-color: #555;
 }
