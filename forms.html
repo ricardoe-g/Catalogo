@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styleform.css">
+	<script src="script.js"></script>
     <body>
-        <h2>Cadastrar</h2>
+        <h2 id='titulo'>Cadastrar</h2>
         <form id="meuFormulariuo">
             <p>Entre o titulo</p>
             <input type="text" id="titulo" name="titulo" placeholder="Digite o título" required>
             <input type="url" id="link" name="imagem" placeholder="Digite a url da imagem" required>
             <textarea type="descricao" id="descricao" name="descricao" placeholder="Digite a descrição da imagem"></textarea>
-            <button type="submit">Adicionar</button>
+            <button>Adicionar</button>
         </form>
+	<button onClick ="alterarFundo()">
+	alterar fundo
+	</button>
     </body>
 </head>
 </html>
