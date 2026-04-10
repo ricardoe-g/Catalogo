@@ -1,0 +1,224 @@
+<!DOCTYPE html> <!-- Define que o documento usa HTML5 -->
+<html lang="pt-br"> <!-- Início do HTML e idioma da página -->
+
+<head> <!-- Cabeçalho da página (configurações e estilos) -->
+<meta charset="UTF-8"> <!-- Permite acentos e caracteres especiais -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em celulares -->
+<title>Catálogo do Zoológico</title> <!-- Título que aparece na aba do navegador -->
+
+
+</head>
+
+<body> <!-- Início do conteúdo visível da página -->
+
+<header> <!-- Cabeçalho do site -->
+<h1>Catálogo do Zoológico</h1> <!-- Título principal -->
+</header>
+
+<section class="banner"> <!-- Seção da imagem principal -->
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/90/44/1d/nova-fachada-do-zoo-sao.jpg?w=900&h=500&s=1" alt="Imagem do zoológico">
+</section>
+
+
+
+</section>
+
+<section class="animais"> <!-- Área com lista de animais -->
+
+<h2>Mamíferos</h2> <!-- Título da categoria -->
+
+<div class="grid"> <!-- Grade de cards -->
+
+<div class="card"> <!-- Card do animal -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg">
+<h3>Leão</h3>
+<p>O leão é conhecido como o rei da selva e vive em grupos chamados alcateias.</p>
+<a href="leao1.html" target="_blank">Saiba mais</a>
+</div>
+
+<div class="card"> <!-- Card do animal -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg">
+<h3>Elefante</h3>
+<p>O maior animal terrestre do planeta, famoso por sua tromba.</p>
+<a href="elefante.html" target="_blank">Saiba mais</a>
+</div>
+
+</div>
+
+<h2>Aves</h2> <!-- Categoria aves -->
+
+<div class="grid">
+
+<div class="card"> <!-- Card do animal -->
+<img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/arara-azul.jpg">
+<h3>Arara</h3>
+<p>A arara é uma ave tropical muito colorida encontrada na América do Sul.</p>
+<a href="arara.html" target="_blank">Saiba mais</a>
+</div>
+
+<div class="card"> <!-- Card do animal -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Q-K8sFMa5mlEY-KuoNthKukAfFhszqX4SQ&s">
+<h3>Tucano</h3>
+<p>O tucano é uma ave tropical conhecida por seu grande bico colorido e sua alimentação baseada principalmente em frutas.</p>
+<a href="tucano.html" target="_blank">Saiba mais</a>
+</div>
+
+</div>
+
+<h2>Répteis</h2> <!-- Categoria répteis -->
+
+<div class="grid">
+
+<div class="card"> <!-- Card do animal -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHHe9cPnVMQlloplyFQHMvNINW4sCVCExthgiGFIe0U9KidEsibSbfWLd977CLWOhuHbo4s9xUeA0WnYXcRiQuEHkmmIt0wxX_Xgi8uyR&s=10">
+<h3>Píton Verde</h3>
+<p>Uma cobra arborícola encontrada em florestas tropicais.</p>
+<a href="piton.html" target="_blank">Saiba mais</a>
+</div>
+<div class="card"> <!-- Card do animal -->
+<img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/106BF/production/_127336276_leatherbackseaturtle.jpg.webp">
+<h3>Tartaruga</h3>
+<p>A tartaruga é um réptil de movimento lento, protegido por um casco resistente e adaptado à vida terrestre e aquática.</p>
+<a href="tartaruga.html" target="_blank">Saiba mais</a>
+</div>
+
+</div>
+
+</section>
+
+<footer> <!-- Rodapé institucional -->
+
+<h3>Sobre o Zoológico</h3> <!-- Título institucional -->
+<p>Nosso zoológico tem como missão a conservação das espécies e a educação ambiental.</p>
+
+<h3>Contato</h3>
+<p>Email: contato@zoologico.com</p>
+<p>Telefone: (11) 99999-9999</p>
+
+<p>© 2026 Zoológico - Todos os direitos reservados.</p>
+
+</footer> <!-- Fim do rodapé -->
+
+</body> <!-- Fim do conteúdo -->
+<style> /* Início do CSS (estilo da página) */
+
+    /* Estilo geral do corpo da página */
+    body{
+        font-family: Arial, sans-serif; /* Fonte do texto */
+        margin:0; /* Remove margens externas */
+        background:#f4f4f4; /* Cor de fundo */
+    }
+    
+    /* Estilo do cabeçalho */
+    header{
+        text-align:center; /* Centraliza o conteúdo */
+        background:#2e7d32; /* Cor verde */
+        color:white; /* Cor do texto */
+        padding:20px; /* Espaçamento interno */
+    }
+    
+    /* Estilo da imagem principal */
+    .banner img{
+        width:100%; /* Ocupa toda largura */
+        height:300px; /* Altura fixa */
+        object-fit:cover; /* Ajusta imagem sem deformar */
+    }
+    
+    /* Área das categorias */
+    .categorias{
+        display:flex; /* Coloca itens lado a lado */
+        justify-content:center; /* Centraliza */
+        gap:30px; /* Espaço entre categorias */
+        padding:20px;
+        background:white;
+    }
+    
+    /* Cada categoria */
+    .categoria{
+        text-align:center;
+    }
+    
+    /* Ícones redondos das categorias */
+    .categoria img{
+        width:80px;
+        height:80px;
+        border-radius:50%; /* Deixa a imagem redonda */
+        object-fit:cover;
+    }
+    
+    /* Área onde ficam os animais */
+    .animais{
+        padding:30px;
+    }
+    
+    /* Título de cada categoria de animal */
+    .animais h2{
+        margin-top:40px;
+    }
+    
+    /* Grid de animais */
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+        gap:20px;
+    }
+    
+    /* Card de cada animal */
+    .card{
+        background:white;
+        border-radius:10px;
+        padding:15px;
+        text-align:center;
+        box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    /* Imagem do animal */
+    .card img{
+        width:100%;
+        height:150px;
+        object-fit:cover;
+        border-radius:8px;
+        object-fit:contain; /* mostra a imagem inteira */
+    }
+    
+    /* Nome do animal */
+    .card h3{
+        margin:10px 0 5px;
+    }
+    
+    /* Descrição do animal */
+    .card p{
+        font-size:14px;
+    }
+    
+    /* Botão de link */
+    .card a{
+        display:inline-block;
+        margin-top:10px;
+        padding:8px 12px;
+        background:#2e7d32;
+        color:white;
+        text-decoration:none;
+        border-radius:5px;
+    }
+    
+    /* Efeito ao passar o mouse no botão */
+    .card a:hover{
+        background:#1b5e20;
+    }
+    
+    /* Rodapé institucional */
+    footer{
+        background:#333;
+        color:white;
+        padding:30px;
+        margin-top:40px;
+    }
+    
+    /* Títulos do rodapé */
+    footer h3{
+        margin-top:0;
+    }
+    
+    </style> <!-- Fim do CSS -->
+</html> <!-- Fim do documento HTML -->

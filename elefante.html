@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html> <!-- Define o documento como HTML5 -->
+<html lang="pt-br"> <!-- Início do HTML e idioma da página -->
+
+<head> <!-- Cabeçalho da página -->
+<meta charset="UTF-8"> <!-- define o conjunto de char -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+<title>Elefante | Catálogo do Zoológico</title> <!-- Título da aba -->
+</head> <!-- cabeçalho de meta dados -->
+
+<body> <!-- mostra todos os documentos visuais -->
+
+<header> <!-- Cabeçalho simples do site -->
+<h1>Catálogo do Zoológico</h1>
+</header>
+
+<main> <!-- Conteúdo principal da página -->
+
+<!-- Imagem grande do elefante -->
+<img 
+class="animal-img"
+src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" 
+alt="Elefante">
+
+<!-- Nome do animal -->
+<h2 class="animal-title">Elefante</h2>
+
+<!-- Descrição detalhada -->
+<p class="animal-desc">
+O elefante é o maior animal terrestre do planeta e é conhecido por sua
+grande inteligência, memória e forte estrutura social. Eles vivem em
+grupos liderados por uma fêmea mais velha chamada matriarca.
+</p>
+
+<p class="animal-desc">
+Os elefantes utilizam sua tromba para diversas funções, como pegar
+alimentos, beber água, se comunicar e até demonstrar afeto entre
+membros do grupo. Eles desempenham um papel fundamental no equilíbrio
+dos ecossistemas onde vivem.
+</p>
+
+<!-- Informações resumidas -->
+<ul class="info">
+<li><strong>Nome científico:</strong> Loxodonta africana</li>
+<li><strong>Habitat:</strong> Savanas, florestas e áreas abertas da África</li>
+<li><strong>Dieta:</strong> Herbívoro</li>
+<li><strong>Expectativa de vida:</strong> 60–70 anos</li>
+</ul>
+
+<!-- Botões de navegação -->
+<div class="actions">
+<a href="index.html">Voltar</a>
+<a href="https://pt.wikipedia.org/wiki/Elefante" target="_blank">Mais informações</a>
+</div>
+
+</main>
+
+<footer> <!-- Rodapé institucional -->
+<p>© 2026 Zoológico • Conservação e educação ambiental</p>
+</footer>
+
+</body>
+
+<style>
+
+/* Reset simples para remover margens padrão */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Estilo geral do site */
+body{
+    font-family: system-ui, Arial, sans-serif;
+    background:#ffffff;
+    color:#222;
+    line-height:1.6;
+}
+
+/* Cabeçalho do site */
+header{
+    background: #045704;
+    color: white;
+    padding: 25px 40px;
+    border-bottom: 3px solid #1b5e20;
+}
+
+/* Título do cabeçalho */
+header h1{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Área principal da página */
+main{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+/* Imagem principal do animal */
+.animal-img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* Nome do animal */
+.animal-title{
+    margin-top:20px;
+    font-size:32px;
+    font-weight:600;
+}
+
+/* Descrição */
+.animal-desc{
+    margin-top:15px;
+    font-size:16px;
+}
+
+/* Lista de informações */
+.info{
+    margin-top:20px;
+    padding-left:18px;
+}
+
+/* Botões */
+.actions{
+    margin-top:30px;
+}
+
+/* Estilo dos links/botões */
+.actions a{
+    text-decoration:none;
+    color:#333;
+    border:1px solid #ddd;
+    padding:8px 14px;
+    border-radius:6px;
+    margin-right:10px;
+    font-size:14px;
+}
+
+/* Hover simples */
+.actions a:hover{
+    background:#f0f0f0;
+}
+
+/* Rodapé minimalista */
+footer{
+    margin-top:60px;
+    border-top:1px solid #e5e5e5;
+    padding:30px 20px;
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+
+</style>
+
+</html>
+
